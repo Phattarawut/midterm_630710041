@@ -1,26 +1,13 @@
+// ignore_for_file: prefer_const_constructors
 import 'package:flutter/material.dart';
-import 'package:midterm_630710041/calendar.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+class Calendar extends StatefulWidget {
+  const Calendar({Key? key}) : super(key: key);
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  // This widget is the root of your application.
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-
-        primarySwatch: Colors.indigo,
-      ),
-      home: const Calendar(),
-    );
-  }
+  State<Calendar> createState() => _CalendarState();
 }
+
 class _CalendarState extends State<Calendar> {
   var _thaiMonth ='';
   var _number='';
@@ -240,6 +227,76 @@ class _CalendarState extends State<Calendar> {
                       Text('Th'),
                       Text('F'),
                       Text('S'),
+                    ],
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: const[
+                      Text('1'),
+                      Text('2'),
+                      Text('3'),
+                      Text('4'),
+                      Text('5'),
+                      Text('6'),
+                      Text('7'),
+                    ],
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: const[
+                      Text('8'),
+                      Text('9'),
+                      Text('10'),
+                      Text('11'),
+                      Text('12'),
+                      Text('13'),
+                      Text('14'),
+                    ],
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: const[
+                      Text('15'),
+                      Text('16'),
+                      Text('17'),
+                      Text('18'),
+                      Text('19'),
+                      Text('20'),
+                      Text('21'),
+                    ],
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: const[
+                      Text('22'),
+                      Text('23'),
+                      Text('24'),
+                      Text('25'),
+                      Text('26'),
+                      Text('27'),
+                      Text('28'),
+                    ],
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Row(
+                    children: const[
+                      Text('29                  '),
+                      Text('30                  '),
+                      Text('31'),
                     ],
                   ),
                 ),
